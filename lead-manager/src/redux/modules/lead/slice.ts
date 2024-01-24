@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 import { Lead, LeadManagerState } from "./types"
 
 const initialState: LeadManagerState = {
-  inviteLeads: [],
+  leadInvites: [],
   accepedLeads: [],
 }
 
@@ -10,8 +10,8 @@ const leadManagerSlice = createSlice({
   name: "leadManager",
   initialState,
   reducers: {
-    receiveInviteLeads: (state, action: PayloadAction<Lead[]>) => {
-      state.inviteLeads = action.payload
+    receiveLeadInvites: (state, action: PayloadAction<Lead[]>) => {
+      state.leadInvites = action.payload
     },
     receiveAcceptedLeads: (state, action: PayloadAction<Lead[]>) => {
       state.accepedLeads = action.payload

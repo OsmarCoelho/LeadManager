@@ -1,0 +1,14 @@
+.screen {
+    flex: 1;
+    flex-direction: "column";
+    min-height: 100vh;
+    background-color: lightgray;
+    padding: 2vh;
+}
+
+.header{
+    display: flex;
+    flex: 1;
+    flex-direction: "row";
+    margin-bottom: 2vh;
+}

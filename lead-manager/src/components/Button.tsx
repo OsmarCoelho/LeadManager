@@ -1,21 +1,24 @@
-import { getInvites } from "../redux/modules/lead/repository"
 import "./Styles.css"
 
 type ButtonProps = {
   onClick: () => void
   label: string
   isActive: boolean
+  className: string
 }
 
-export default function Button() {
+export default function Button({
+  onClick,
+  label,
+  className,
+  isActive,
+}: ButtonProps) {
   return (
     <div
-      className={"BasicButton"}
-      onClick={async () => {
-        await getInvites()
-      }}
+      className={`${className} ${isActive ? " activeButton" : ""}`}
+      onClick={onClick}
     >
-      <p>pudim</p>
+      <p className="label">{label}</p>
     </div>
   )
 }

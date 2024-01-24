@@ -1,5 +1,5 @@
 export type LeadManagerState = {
-  inviteLeads: Lead[]
+  leadInvites: Lead[]
   accepedLeads: Lead[]
 }
 
@@ -15,4 +15,5 @@ export type Lead = {
   price: number
   suburb: string
   surname: string
+  createdDate: string
 }
