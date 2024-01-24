@@ -1,4 +1,4 @@
-<h1>Como rodar a interface do LeadManeger:</h1>
+<h1>Como rodar a interface do LeadManager:</h1>
 
 <h2>Requisitos:</h2>
 <p>Para roadar o LeadManager garanta que as seguintes ferramentas estejam instaladas no seu sistema:</p>
