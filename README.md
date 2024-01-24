@@ -18,4 +18,4 @@
   <li>Rodar o comando yarn;</li>
   <li>Rodar o código: `npm start`</li>
 </ul>
-<p>Nesse ponto a API deverá estar rodando no seu localhost.</p>
+<p>Nesse ponto a interface deverá estar rodando no seu localhost.</p>
