@@ -1,6 +1,8 @@
 import { Lead } from "../redux/modules/lead/types"
 import { useAppDispatch } from "../redux/store"
 import LeadHeader from "./LeadHeader"
+import phone from "../assets/svg/mail.svg"
+import mail from "../assets/svg/phone.svg"
 import "./Styles.css"
 
 type AcceptedCardProps = { lead: Lead }
@@ -39,8 +41,14 @@ export default function AcceptedCard({ lead }: AcceptedCardProps) {
       />
       <div className="description">
         <div className="contactContainer">
-          <div className="contactInfo">{phoneNumber}</div>
-          <div className="contactInfo">{email}</div>
+          <div className="contactInfo">
+            <img src={phone} />
+            {phoneNumber}
+          </div>
+          <div className="contactInfo">
+            <img src={mail} />
+            {email}
+          </div>
         </div>
         <div>{description}</div>
       </div>

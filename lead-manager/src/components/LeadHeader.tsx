@@ -1,7 +1,8 @@
-import { Lead } from "../redux/modules/lead/types"
 import moment from "moment"
 import "./Styles.css"
 import { USDollar } from "../constants"
+import pin from "../assets/svg/map-pin.svg"
+import briefcase from "../assets/svg/briefcase.svg"
 
 type LeadHeaderProps = {
   firstName: string
@@ -39,8 +40,14 @@ export default function LeadHeader({
         </div>
       </div>
       <div className="leadInfo">
-        <div className="infoTag">{`${suburb} ${number}`}</div>
-        <div className="infoTag">{`${category}`}</div>
+        <div className="infoTag">
+          <img src={pin} />
+          {`${suburb} ${number}`}
+        </div>
+        <div className="infoTag">
+          <img src={briefcase} />
+          {`${category}`}
+        </div>
         <div className="infoTag">{`${jobId}`}</div>
         {accepted && <div>{`${USDollar.format(price)} Lead Invitation`}</div>}
       </div>

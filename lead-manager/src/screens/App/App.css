@@ -2,6 +2,11 @@ html, body >div {
   min-height: 100vh;
 }
 
+iframe
+{
+    display: none;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
