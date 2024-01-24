@@ -45,7 +45,7 @@ export default function LeadManager() {
         />
       </div>
       {loading ? (
-        <div>Carregando...</div>
+        <div className="loading">Carregando...</div>
       ) : (
         <div>
           {leadlist.map((item) =>
